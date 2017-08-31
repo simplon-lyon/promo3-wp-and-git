@@ -26,3 +26,10 @@ A example on how to save a Wordpress project on Github.
 1. go to your Wordpress folder in the command line:
     - dump the content of MySQL: `mysqldump -u user -p database > database.sql`
 2. commit and push the change
+
+## Restore The Project
+
+1. clone your repostory
+2. create a new database for your website: `mysql -u user -p --execute 'CREATE DATABASE name;'`
+3. restore the database: `mysql -u user -p < database.sql`
+4. open your site in the browser
