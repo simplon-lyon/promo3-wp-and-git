@@ -20,3 +20,9 @@ A example on how to save a Wordpress project on Github.
     - commit the change: `git commit`
     - push the change to Github: `git push --set-upstream origin master`
 3. celebrate!
+
+## Save The Database
+
+1. go to your Wordpress folder in the command line:
+    - dump the content of MySQL: `mysqldump -u user -p database > database.sql`
+2. commit and push the change
