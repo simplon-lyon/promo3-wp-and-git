@@ -32,4 +32,11 @@ A example on how to save a Wordpress project on Github.
 1. clone your repostory
 2. create a new database for your website: `mysql -u user -p --execute 'CREATE DATABASE name;'`
 3. restore the database: `mysql -u user -p < database.sql`
-4. open your site in the browser
+4. copy `wp-config-sample.php`: `cp wp-config-sample.php wp-config.php`
+5. edit `wp-config.php`: set the name of the database, your username, your pass, etc...
+6. add the following line to `wp-config.php` to tell Wordpress the new URL of your website:
+
+```
+define('WP_HOME','http://example.com');
+define('WP_SITEURL','http://example.com');
+```
